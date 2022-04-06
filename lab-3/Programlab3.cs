@@ -88,7 +88,7 @@ public class Exercise2
     {
          T[] firstAndLast = new T[2];
         firstAndLast[0] = arr[0];
-        firstAndLast[1] = arr[arr.length - 1];
+        firstAndLast[1] = arr[arr.Length - 1];
 
         bool isSame = arr[0].ToString() == arr[1].ToString();
         
@@ -103,7 +103,7 @@ public class Exercise3
     //Zdefiniuj poniższa metodę, która zlicza liczbę wystąpień elementów tablicy arr
     //Przykład
     //dla danej tablicy
-    //string[] arr = {"adam", "ola", "adam" ,"ewa" ,"karol", "ala" ,"adam", "ola"};
+    //string[] arr = { "adam", "ola", "adam", "ewa", "karol", "ala", "adam", "ola" };
     //wywołanie metody
     //countElements(arr, "adam", "ewa", "ola");
     //powinno zwrócić tablicę krotek
