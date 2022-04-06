@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab_4
 {
+<<<<<<< HEAD
     class App
     {
         public static void Main(string[] args)
@@ -52,6 +53,15 @@ namespace lab_4
             }
         }
     }
+=======
+    //class App
+    //{
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+    //}
+>>>>>>> 3e6c9726a30ecabaa4cc00216c24d36e551d19f4
 
     enum Direction8
     {
