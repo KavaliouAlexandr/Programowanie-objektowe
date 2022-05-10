@@ -66,11 +66,53 @@ namespace lab_5
         CHF
     }
 
+
+
     class CurrencyRates
     {
         //utwórz tablicę o rozmiarze równym liczbie stalych wyliczeniowych Currency
         private decimal[] _rates = new decimal[Enum.GetValues<Currency>().Length];
-    }
+
+        public decimal this[Currency currency]
+        {
+            get
+            {
+                int index = default;
+
+                foreach (var crnc in Enum.GetValues<Currency>())
+                {
+                    if (crnc == currency)
+                    {
+                        break;
+                    }
+
+                    index++;
+                }
+
+                return _rates[index];
+            }
+            set
+            {
+                int index = default;
+
+                foreach (var crnc in Enum.GetValues<Currency>())
+                {
+                    if (crnc == currency)
+                    {
+                        break;
+                    }
+
+                    index++;
+                }
+                _rates[index] = value;
+            }
+        }
+
+
+
+
+
+    }        
 
     //Cwiczenie 3
     //Zdefiniuj enumerator zwracający kolejne liczby szesnastowe zapisane w łańcuchu o długości 8 znaków plus znaki 0x jako prefiks
